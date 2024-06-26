@@ -5,9 +5,11 @@ import mongoose from "mongoose"
 import cors from "cors"
 import cookieParser from "cookie-parser"
 
+import tourRoute from "./routes/tour.js"
+
 dotenv.config()
 const app = express ()
-const port = process.env.PORT || 8000
+const port = process.env.PORT || 8000 ;
 
 // for testing
 
@@ -16,15 +18,16 @@ const port = process.env.PORT || 8000
 // })
 
 //database connection
-
+mongoose.set("strictQuery",false);
 const connect = async () =>{
     try {
        await mongoose.connect(process.env.MONGO_URI,{
         useNewUrlParser:true,
-        useUnifiedToplogy :true
-       }) 
+        useUnifiedTopology :true
+       });
+       console.log("MongoDb Connected")
     } catch (error) {
-        
+        console.log("MongoDb Connection failed !")
     }
 }
 
@@ -32,8 +35,10 @@ const connect = async () =>{
 app.use(express.json())
 app.use(cors())
 app.use(cookieParser())
+app.use("/tour",tourRoute)
 
 app.listen(port,()=>{
+    connect();
     console.log('server listening on port', port);
 })
 
