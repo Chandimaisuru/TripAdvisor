@@ -11,7 +11,7 @@ export const createTour = async (req,res) =>{
         const savedTour =await newTour.save();
         res.status(200).json({success:true,message:"Successfully Created",data:savedTour})
     } catch (error) {
-        res.status(500).json({success:true,message:"Failed to created.Try again"})
+        res.status(500).json({success:false,message:"Failed to created.Try again"})
     }
 }
 
@@ -31,7 +31,7 @@ export const updateTour = async (req,res) =>{
      res.status(200).json({success:true,message:"Successfully Updated",data:updatedTour})
 
    } catch (error) {
-    res.status(500).json({success:true,message:"Failed to update.Try again"})
+    res.status(500).json({success:false,message:"Failed to update.Try again"})
    }
 }  
 
@@ -46,7 +46,7 @@ export const deleteTour = async (req,res) =>{
       res.status(200).json({success:true,message:"Successfully Deleted"})
  
     } catch (error) {
-     res.status(500).json({success:true,message:"Failed to delete.Try again"})
+     res.status(500).json({success:false,message:"Failed to delete.Try again"})
     }
  }  
 
@@ -61,13 +61,12 @@ export const getSingleTour = async (req,res) =>{
       res.status(200).json({success:true,message:"Successfully",data:tour})
  
     } catch (error) {
-     res.status(500).json({success:true,message:"Failed to search.Try again"})
+     res.status(500).json({success:false,message:"Failed to search.Try again"})
     }
  }  
 
  // getAll tour
-
-export const getAllTour = async (req,res) =>{
+  export const getAllTour = async (req,res) =>{
 
     // for pagination
     const page = parseInt(req.query.page);
@@ -81,6 +80,24 @@ export const getAllTour = async (req,res) =>{
         res.status(200).json({success:true,count:tour.length,message:"Successfully",data:tour})
    
       } catch (error) {
-       res.status(500).json({success:true,message:"Failed to search.Try again"})
+       res.status(500).json({success:false,message:"Failed to search.Try again"})
       }
- }  
+  }  
+
+ // get tour by search
+ export const getTourBySearch = async (req,res)=>{
+
+  const city = new RegExp(req.query.city,"i")
+  const distance =  parseInt(req.query.distance)
+  const maxGroupSize = parseInt(req.query.maxGroupSize)
+  
+  try {
+    const tour =await Tour.find({city,distance:{$gte:distance},maxGroupSize:{$gte:maxGroupSize}})
+    res.status(200).json({success:true,message:"Successfully",data:tour})
+   
+  } catch (error) {
+    res.status(500).json({success:false,message:"Failed to search.Try again"})
+  }
+
+ }
+  

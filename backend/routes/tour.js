@@ -1,7 +1,7 @@
 
 
 import express from 'express'
-import { createTour, deleteTour, getAllTour, getSingleTour, updateTour } from '../controllers/tourController.js'
+import { createTour, deleteTour, getAllTour, getSingleTour, getTourBySearch, updateTour } from '../controllers/tourController.js'
 
 const router = express.Router()
 
@@ -19,6 +19,9 @@ router.get('/:id',getSingleTour)
 
 // get all tour
 router.get('/',getAllTour)
+
+// get tour by search
+router.get('/search/getTourBySearch',getTourBySearch)
 
 
 export default router;
