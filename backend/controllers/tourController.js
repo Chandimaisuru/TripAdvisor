@@ -100,4 +100,31 @@ export const getSingleTour = async (req,res) =>{
   }
 
  }
+
+
+ // get featured tour
+ export const getFeaturedTour = async (req,res) =>{
+
+  try {
+      const tour = await Tour.find({featured:true}).limit(8);
+
+      res.status(200).json({success:true,message:"Successfully",data:tour})
+ 
+    } catch (error) {
+     res.status(500).json({success:false,message:"Not found"})
+    }
+}  
   
+
+// get tour count
+export const getTourCount = async (req,res) =>{
+
+  try {
+      const tourCount = await Tour.estimatedDocumentCount();
+
+      res.status(200).json({success:true,message:"Successfully",data:tourCount})
+ 
+    } catch (error) {
+     res.status(500).json({success:false,message:"failed to fetch"})
+    }
+}  
