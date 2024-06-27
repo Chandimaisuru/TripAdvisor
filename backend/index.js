@@ -7,6 +7,7 @@ import cookieParser from "cookie-parser"
 
 import tourRoute from "./routes/tour.js"
 import userRoute from "./routes/user.js"
+import authRoute from "./routes/auth.js"
 
 dotenv.config()
 const app = express ()
@@ -38,6 +39,7 @@ app.use(cors())
 app.use(cookieParser())
 app.use("/tour",tourRoute)
 app.use("/user",userRoute)
+app.use("/auth",authRoute)
 
 app.listen(port,()=>{
     connect();
