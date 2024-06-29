@@ -1,10 +1,13 @@
 import express from 'express'
-import { createReview } from '../controllers/reviewController.js'
-import { verifyUser } from '../utils/verifyToken.js'
+
+import { verifyAdmin, verifyUser } from '../utils/verifyToken.js'
+import { createBooking, getAllBooking, getBooking } from '../controllers/bookingController.js'
 
 const router = express.Router()
 
-router.post('/:tourId',verifyUser,createReview)
+router.post('/',verifyUser,createBooking)
+router.get('/:id',verifyUser,getBooking)
+router.get('/',verifyAdmin,getAllBooking)
 
 
 export default router
