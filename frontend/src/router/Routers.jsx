@@ -18,7 +18,7 @@ function Routers() {
         <Route path='/' element = {<Navigate to ='/home'/>} />
         <Route path='/home' element = {<Home/>} />
         <Route path='/tours' element = {<Tours/>} />
-        <Route path='/tour/:id' element = {<TourDetails/>} />
+        <Route path='/tours/:id' element = {<TourDetails/>} />
         <Route path='/login' element = {<Login/>} /> 
         <Route path='/register' element = {<Register/>} />
         <Route path='/about' element = {<About/>} />
