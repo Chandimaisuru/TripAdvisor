@@ -8,17 +8,23 @@ import SearchBar from '../shared/SearchBar';
 import Newsletter  from '../shared/Newsletter';
 import { Col, Container,Row } from 'reactstrap';
 
+import useFetch from '../hooks/useFetch';
+import { BASE_URL } from '../utils/config';
+
 
 function Tours() {
 
   const [pageCount,setPageCount] = useState(0);
   const [page,setPage] =useState(0);
 
-  useEffect (() =>{
-    const pages = Math.ceil(5/4); //later we will use backend count
-    setPageCount(pages);
+  const {data:tours,loading,error} = useFetch(BASE_URL+"/tour?page="+page)
+  const {data:tourCount} = useFetch(BASE_URL+"/tour/search/getTourCount")
 
-  }, [page])
+  useEffect (() =>{
+    const pages = Math.ceil(tourCount/8); //later we will use backend count
+    setPageCount(pages);
+    window.scrollTo(0,0)
+  }, [page,tourCount,tours])
   return (
     <>
     
@@ -34,9 +40,13 @@ function Tours() {
 
      <section className='pt-0'>
        <Container>
-        <Row>
-           {tourData ?.map(tour =>(
-             <Col lg='3'className='mb-4' key={tour.id}>
+
+      {loading && <h4 className='pt-5 text-center'>Loading.....</h4>}
+      {error && <h4 className='pt-5 text-center'>{error}</h4>}
+
+       {!loading && !error &&  <Row>
+           {tours ?.map(tour =>(
+             <Col lg='3'className='mb-4' key={tour._id}>
                <TourCard tour={tour}/>
              </Col>
            ))}
@@ -56,7 +66,7 @@ function Tours() {
 
                </div>
            </Col> 
-        </Row>
+        </Row>}
        </Container>
      </section>
      <Newsletter/>
