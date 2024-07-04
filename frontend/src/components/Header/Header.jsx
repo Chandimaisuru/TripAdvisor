@@ -27,6 +27,7 @@ const nav_links = [
 
 function Header() {
   const headerRef = useRef(null);
+  const menuRef = useRef(null);
   const navigate = useNavigate()
   const{user,dispatch} = useContext(AuthContext)
 
@@ -54,6 +55,8 @@ function Header() {
     return window.removeEventListener("scroll", stickyHeaderFunc);
   });
 
+  const toggleMenu = ()=> menuRef.current.classList.toggle('show__menu')
+
   return (
     <header className='header' ref={headerRef}>
 
@@ -75,7 +78,7 @@ function Header() {
 
 
             {/* ===========menu=================  */}
-            <div className="navigation">
+            <div className="navigation" ref={menuRef} onClick={toggleMenu}>
               <ul className="gap-5 menu d-flex align-items-center ">
 
                 {nav_links.map((item, index) => (
@@ -118,7 +121,7 @@ function Header() {
                 )}
               </div>
 
-              <span className='flex mobile__menu'>
+              <span className='flex mobile__menu'onClick={toggleMenu}>
 
                 < i className="ri-menu-line"></i>
               </span>

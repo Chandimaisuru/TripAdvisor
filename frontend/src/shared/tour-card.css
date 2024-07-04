@@ -93,3 +93,26 @@
 .booking__btn a:hover{
     color:black;
 }
+
+
+/* ============resposive=================== */
+
+@media only screen and (max-width:992px){
+    .tour__title{
+        font-size: 1rem;
+    }
+
+    .booking__btn a{
+
+        font-size: 0.8rem;
+
+    }
+
+    .booking__btn {
+        padding: 0.3rem 0.5rem;
+    }
+
+    .tour__location,.tour__rating{
+        font-size: 0.8rem;
+    }
+}

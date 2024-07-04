@@ -58,7 +58,7 @@ function Home() {
 
             <Col lg='2'>
 
-              <div className='mt-4 hero__img-box'>
+              <div className='mt-4 hero__img-box hero__video__box'>
                 <video src={heroVideo} alt="" controls />
               </div>
 
