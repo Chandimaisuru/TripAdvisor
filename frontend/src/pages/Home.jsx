@@ -48,7 +48,7 @@ function Home() {
 
             </Col>
 
-            <Col lg='2'>
+            {/* <Col lg='2'>
 
               <div className='hero__img-box'>
                 <img src={heroImg} alt="" />
@@ -70,7 +70,7 @@ function Home() {
                 <img src={heroImg02} alt="" />
               </div>
 
-            </Col>
+            </Col> */}
 
             <SearchBar />
 
