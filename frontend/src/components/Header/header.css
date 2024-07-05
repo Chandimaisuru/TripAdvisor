@@ -6,8 +6,11 @@
     
 }  
 
-.logo img{
+.logo h2{
     width: 30%;
+    color: #28915E;
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+    font-weight: bold;
 }
 
 .menu{
@@ -56,7 +59,11 @@
 @media only screen and (max-width:992px) {
 
     .logo img {
-        width: 20%;
+        position:absolute;
+        width: 60%;
+        height: 20%;
+        top: -5px;
+        left: 0;
     }
 
     .navigation{
@@ -99,6 +106,7 @@
 @media only screen and (max-width:768px) {
    .logo img{
     width: 45%;
+  
    }
 
    .menu{

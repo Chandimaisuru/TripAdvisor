@@ -5,8 +5,14 @@
     border-radius: 50px;
     box-shadow: rgba(17,12,46,0.15) 0px 48px 100px 0px;
     width: max-content;
-    margin-top: 50px;
+    margin-top: 30px;
+    margin-left: 250px;
     border: none;
+    background-color: #fff;
+    opacity: 0.8;
+    position: relative;
+    
+
 
 }
 
@@ -31,6 +37,7 @@
     outline: none;
     border: none;
     border-style: none;
+     
 }
 
 .form__group h6{
@@ -45,10 +52,14 @@ padding-right: 4px;
 .search__icon i{
     font-size: 1.6rem;
     padding: 0.5rem;
+    position: absolute;
+    top: 8.5px;
+    right: 19px;
     background: var(--secondary-color);
     color: #fff;
     border-radius: 10px 5px 10px 5px;
     cursor: pointer;
+    
 
 }
 

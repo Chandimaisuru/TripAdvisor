@@ -1,7 +1,7 @@
 import React,{useRef,useEffect,useContext} from 'react'
 import { Container, Row, Button } from "reactstrap";
 import { NavLink, Link,useNavigate } from 'react-router-dom'
-import logo from '../../assets/images/logo.png'
+import logo from '../../assets/images/logo1.png'
 import './header.css'
 
 import { AuthContext } from "../../context/AuthContext";
@@ -69,7 +69,8 @@ function Header() {
             {/* ============logo=========== */}
 
             <div className='logo'>
-              <img src={logo} alt=" logo" />
+              {/* <img src={logo} alt=" logo" width="500px" height="100px" /> */}
+              <h2>TripAdvisor</h2>
 
             </div>
 

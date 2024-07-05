@@ -28,7 +28,7 @@ function Tours() {
   return (
     <>
     
-     <CommonSection title={"All tours"}/>
+     <CommonSection title={"All Tours"}/>
 
      <section>
        <Container>

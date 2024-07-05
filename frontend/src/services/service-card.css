@@ -3,9 +3,10 @@
 .service__item{
     
     padding: 1rem;
-    border-bottom: 1px solid #faa83586;
-    border-right: 1px solid #faa83586;
+    border-bottom: 1.5px solid #faa83586;
+    border-right: 1.5px solid #faa83586;
     border-radius: 0.5rem;
+    margin-top: 190px;
 }
 
 .service__img{
