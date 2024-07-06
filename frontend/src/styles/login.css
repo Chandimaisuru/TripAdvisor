@@ -2,7 +2,7 @@
 .login__img{
 width: 60%;
 text-align: center;
-background:whitesmoke;
+background:var(--secondary-color);
 }
 .login__img img{
 width: 70%;
