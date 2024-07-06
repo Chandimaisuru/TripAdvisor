@@ -17,7 +17,7 @@ function SearchResultList() {
 
   return (
     <section>
-     <CommonSection tittle={"Tour Search Result"}/>
+   <CommonSection title={"Search Results"}/>
     <section>
      <Container>
       <Row>

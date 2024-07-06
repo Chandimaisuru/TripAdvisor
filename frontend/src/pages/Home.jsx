@@ -27,7 +27,7 @@ function Home() {
       
 
           <Row>
-            <Col lg='10'>
+            <Col >
 
               <div className='hero__content'>
                 <div className="hero__subtitle d-flex align-item-center">
@@ -47,6 +47,7 @@ function Home() {
                 <p>
                 Plan your next adventure with ease. Explore top destinations, find unbeatable deals on flights and hotels, and read trusted reviews from fellow travelers. Whether it’s a quick getaway or a dream vacation, we’ve got you covered
                 </p>
+                <SearchBar />
               </div>
 
             </Col>
@@ -75,7 +76,7 @@ function Home() {
 
             </Col> */}
 
-            <SearchBar />
+       
 
           </Row>
 
@@ -90,7 +91,7 @@ function Home() {
           <Row>
             <Col lg='3'>
               <h5 className='services__subtitle'> What we serve</h5>
-              <h2 className='services__title'>We offer our best services</h2>
+              <h2 className='services__title'>We Offer Our Best Services</h2>
             </Col>
 
             <ServiceList />
@@ -107,7 +108,7 @@ function Home() {
           <Row>
             <Col lg='12' className='mb-5'>
               <Subtitle subtitle={"Explore"} />
-              <h2 className='featured__tour-title'>Our featured tours</h2>
+              <h2 className='featured__tour-title'>Our Featured Tours</h2>
             </Col>
             <FeaturedTourList />
           </Row>
@@ -175,7 +176,7 @@ function Home() {
             <Col lg="12">
               <Subtitle subtitle={'Gallery'}/>
               <h2 className="gallery__title">
-                Visit our customers tour gallery
+                Visit Our Customers Ttour Gallery
               </h2>
             </Col>
 
@@ -196,7 +197,7 @@ function Home() {
             <Col lg="12">
               <Subtitle subtitle={'Fans Love'}/>
               <h2 className="testimonial__title">
-                What our fans say about us
+                What Our Fans Say About Us
               </h2>
             </Col>
 

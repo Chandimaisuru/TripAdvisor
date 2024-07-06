@@ -1,7 +1,8 @@
 
  
  .newsletter{
-    background: #cae5f4;
+    background:  url("../assets/images/tour-img06.jpg") no-repeat center center;
+    background-size: cover;
     padding: 0;
     margin-top: 3rem;
  }
@@ -17,6 +18,7 @@
  .newsletter__content h2{
     font-size: 2.5rem;
     margin-bottom: 2rem;
+    color: #fff;
 
  }
 
@@ -49,7 +51,7 @@
  }
 
  .newsletter__content p{
-    color: var(--heading-color);
+    color: var(--text-color);
     font-size: 1.1rem;
  }
 

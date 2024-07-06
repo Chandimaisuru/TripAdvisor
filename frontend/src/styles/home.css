@@ -28,8 +28,8 @@ video {
     color: var(--heading-color);
     color:#fff;
     opacity: 0.5;
-    margin-left: 320px;
-    margin-top: 120px;
+    /* margin-left: 320px; */
+    margin-top: 105px;
      
 
 }
@@ -42,8 +42,8 @@ video {
     font-size: 1.1rem;
     color: var(--text-color);
     line-height: 1.7rem;
-  
-    margin-left: 230px;
+    margin: 0px 210px;
+
 }
 
 .hero__img-box img,
@@ -57,6 +57,10 @@ video {
 
 .hero__content{
     padding-top: 3.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .hero__img-box{

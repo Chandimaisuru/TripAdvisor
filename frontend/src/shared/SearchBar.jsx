@@ -35,7 +35,7 @@ function SearchBar() {
 
   return (
     <>
-      <Col lg="12">
+      <Col >
 
         <div className='search__bar'>
           <Form className='gap-4 d-flex align-item-center'>

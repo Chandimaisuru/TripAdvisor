@@ -106,7 +106,7 @@ function Header() {
               {user ? (
                   <>
                     <h5 className="mb-0">{user.username}</h5>
-                    <Button className="btn btn_dark" onClick={logout}>
+                    <Button className="btn primary__btn" onClick={logout}>
                       Logout
                     </Button>
                   </>

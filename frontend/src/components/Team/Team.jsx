@@ -38,16 +38,13 @@ const Team = () => {
         <div className="gap-4 mt-3 team_Name d-flex align-items-center">
           <img src={ava01} className="w-25 h-25 rounded-2" alt="" />
           <div>
-            <h6 className="mt-3 mb-0">Nimal Silva</h6>
-            <p>Customer</p>
+            <h6 className="mt-3 mb-0">Leo Perera</h6>
+            <p>Lead Travel Consultant</p>
           </div>
         </div>
 
         <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut, ratione
-          saepe! Laboriosam, libero sunt illo quia perferendis hic, illum
-          officiis provident quae nihil mollitia delectus maxime eum. Tempora,
-          illo veritatis.
+        Leo is the visionary behind TripAdvisor, with over 15 years of experience in the travel industry. His passion for showcasing the beauty of Sri Lanka drives our mission to provide exceptional travel experiences.
         </p>
       </div>
 
@@ -55,16 +52,13 @@ const Team = () => {
         <div className="gap-4 mt-3 team_Name d-flex align-items-center">
           <img src={ava02} className="w-25 h-25 rounded-2" alt="" />
           <div>
-            <h6 className="mt-3 mb-0">Nimal Silva</h6>
-            <p>Customer</p>
+            <h6 className="mt-3 mb-0">Maya Fernandoa</h6>
+            <p>Head of Operations</p>
           </div>
         </div>
 
         <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut, ratione
-          saepe! Laboriosam, libero sunt illo quia perferendis hic, illum
-          officiis provident quae nihil mollitia delectus maxime eum. Tempora,
-          illo veritatis.
+        Maya ensures everything runs smoothly at TripAdvisor. With a background in logistics and a keen eye for detail, she coordinates all our services to guarantee a seamless experience for our clients.
         </p>
       </div>
 
@@ -72,16 +66,27 @@ const Team = () => {
         <div className="gap-4 mt-3 team_Name d-flex align-items-center">
           <img src={ava03} className="w-25 h-25 rounded-2" alt="" />
           <div>
-            <h6 className="mt-3 mb-0">Nimal Silva</h6>
-            <p>Customer</p>
+            <h6 className="mt-3 mb-0">Ravi Jayasinghe </h6>
+            <p>Founder & CEO</p>
           </div>
         </div>
 
         <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut, ratione
-          saepe! Laboriosam, libero sunt illo quia perferendis hic, illum
-          officiis provident quae nihil mollitia delectus maxime eum. Tempora,
-          illo veritatis.
+        Ravi is the visionary behind TripAdvisor, with over 15 years of experience in the travel industry. His passion for showcasing the beauty of Sri Lanka drives our mission to provide exceptional travel experiences.
+        </p>
+      </div>
+
+      <div className="px-3 py-4 team">
+        <div className="gap-4 mt-3 team_Name d-flex align-items-center">
+          <img src={ava02} className="w-25 h-25 rounded-2" alt="" />
+          <div>
+            <h6 className="mt-3 mb-0">Nisha Senanayake</h6>
+            <p>Marketing Manager</p>
+          </div>
+        </div>
+
+        <p>
+        Nisha brings TripAdvisor to life through innovative marketing strategies. With a flair for creativity and a deep understanding of the travel market, she connects us with adventurers eager to explore Sri Lanka.
         </p>
       </div>
 
@@ -89,16 +94,13 @@ const Team = () => {
         <div className="gap-4 mt-3 team_Name d-flex align-items-center">
           <img src={ava01} className="w-25 h-25 rounded-2" alt="" />
           <div>
-            <h6 className="mt-3 mb-0">Nimal Silva</h6>
-            <p>Customer</p>
+            <h6 className="mt-3 mb-0">Leo Perera</h6>
+            <p>Lead Travel Consultant</p>
           </div>
         </div>
 
         <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut, ratione
-          saepe! Laboriosam, libero sunt illo quia perferendis hic, illum
-          officiis provident quae nihil mollitia delectus maxime eum. Tempora,
-          illo veritatis.
+        Leo is the visionary behind TripAdvisor, with over 15 years of experience in the travel industry. His passion for showcasing the beauty of Sri Lanka drives our mission to provide exceptional travel experiences.
         </p>
       </div>
 
@@ -106,35 +108,16 @@ const Team = () => {
         <div className="gap-4 mt-3 team_Name d-flex align-items-center">
           <img src={ava02} className="w-25 h-25 rounded-2" alt="" />
           <div>
-            <h6 className="mt-3 mb-0">Nimal Silva</h6>
-            <p>Customer</p>
+            <h6 className="mt-3 mb-0">Maya Fernandoa</h6>
+            <p>Head of Operations</p>
           </div>
         </div>
 
         <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut, ratione
-          saepe! Laboriosam, libero sunt illo quia perferendis hic, illum
-          officiis provident quae nihil mollitia delectus maxime eum. Tempora,
-          illo veritatis.
+        Maya ensures everything runs smoothly at TripAdvisor. With a background in logistics and a keen eye for detail, she coordinates all our services to guarantee a seamless experience for our clients.
         </p>
       </div>
 
-      <div className="px-3 py-4 team">
-        <div className="gap-4 mt-3 team_Name d-flex align-items-center">
-          <img src={ava03} className="w-25 h-25 rounded-2" alt="" />
-          <div>
-            <h6 className="mt-3 mb-0">Nimal Silva</h6>
-            <p>Customer</p>
-          </div>
-        </div>
-
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut, ratione
-          saepe! Laboriosam, libero sunt illo quia perferendis hic, illum
-          officiis provident quae nihil mollitia delectus maxime eum. Tempora,
-          illo veritatis.
-        </p>
-      </div>
     </Slider>
   );
 };

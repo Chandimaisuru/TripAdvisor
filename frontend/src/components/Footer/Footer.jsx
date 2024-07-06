@@ -3,7 +3,7 @@ import "./footer.css"
 
 import {Col,Container,Row,ListGroup,ListGroupItem } from 'reactstrap'
 import { Link } from 'react-router-dom'
-import logo from "../../assets/images/logo.png";
+import logo from "../../assets/images/logo2.png";
 
 const quick_links = [
   {
@@ -46,8 +46,9 @@ function Footer() {
       <Row>
         <Col lg='3'>
           <div className="logo">
-            <img src={logo} alt="" />
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam iusto totam id eaque asperiores!</p>
+            {/* <img src={logo} alt="" /> */}
+            <h4>TripAdvisor</h4>
+            <p>TripAdvisor is your ultimate travel companion, offering the best deals on flights, hotels, and experiences.</p>
 
             <div className="gap-4 social__links d-flex align-items-center">
                    <span>
@@ -110,30 +111,30 @@ function Footer() {
                   <span>
                     <i className="ri-map-pin-fill"></i>
                   </span>
-                  Address:
+                  Address :
                 </h6>
 
-                <p className="mb-0">Belihuloya, Balangoda</p>
+                <p className="mb-1 ml-2">Colombo,Sri Lanka</p>
               </ListGroupItem>
               <ListGroupItem className="gap-3 border-0 ps-0 d-flex align-items-center">
                 <h6 className="mb=0 d-flex align-items-center gap-2">
                   <span>
                   <i className="ri-mail-fill"></i>
                   </span>
-                  Email:
+                     Email  : 
                 </h6>
 
-                <p className="mb-0">traveltripper@.com</p>
+                <p className="gap-6 mb-1">tripadvisor@gmail.com</p>
               </ListGroupItem>
               <ListGroupItem className="gap-3 border-0 ps-0 d-flex align-items-center">
                 <h6 className="mb=0 d-flex align-items-center gap-2">
                   <span>
                   <i className="ri-phone-fill"></i>
                   </span>
-                  Phone:
+                  Phone :   
                 </h6>
 
-                <p className="mb-0">+941456790</p>
+                <p className="mb-1">+94771456790</p>
               </ListGroupItem>
             </ListGroup>
           </Col>

@@ -14,15 +14,7 @@ const About = () => {
               <div className="content">
                 <h1>About Us</h1>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Doloribus beatae tempore voluptatibus iusto blanditiis,
-                  repudiandae voluptates earum consequuntur ex, autem recusandae
-                  distinctio consectetur aspernatur id enim nesciunt molestias
-                  temporibus provident. Lorem ipsum dolor sit amet consectetur
-                  adipisicing elit. Quia provident accusantium saepe quaerat aut
-                  aliquam, ab corrupti! Rerum impedit nisi pariatur aspernatur.
-                  Molestias architecto temporibus minus pariatur molestiae
-                  suscipit distinctio.
+                Welcome to TripAdvisor, your gateway to unforgettable adventures and seamless travel experiences. We are a passionate team of travel enthusiasts committed to helping you explore the world with ease, confidence, and joy.Founded by avid travelers, TripAdvisor was born out of a desire to make travel accessible and enjoyable for everyone. We understand the thrill of discovering new destinations and the importance of hassle-free planning. That’s why we’ve created a platform that brings together the best travel options, expert insights, and unbeatable deals all in one place.
                 </p>
               </div>
               <div className="slider">
@@ -44,36 +36,27 @@ const About = () => {
             </h1>
             <Col lg="6">
               <div className="ContactUs_content">
-                <h2>Ask how we can help you ...</h2>
+              <h2>Ask how we can help you ...</h2>
                 <p>
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et,
-                  commodi voluptatem autem magnam blanditiis tempora!
-                  <br />
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et,
-                  commodi voluptatem autem magnam blanditiis tempora!
-                  <br />
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Have questions or need assistance with your travel plans? Our team at Sanchare is here to help! Whether you need recommendations, booking assistance, or detailed information about destinations in Sri Lanka, just ask us. We're committed to making your travel experience smooth and enjoyable. Reach out and discover how we can assist you today!
                 </p>
 
-                <h2>Offline location</h2>
+                <h2 className="offline">Offline Location</h2>
                 <p>
-                  Position 1 <br />
-                  dolor sit amet,
-                  <br /> consectetur adipiscing elit,
-                  <br /> sed do ei usmod tempor
-                  <br /> incididunt ut labore
+                  <br /> No. 45,
+                  <br /> Galle Road,
+                  <br /> Colombo,
+                  <br /> Sri Lanka.
                 </p>
+
 
                 <h2>Contact Information</h2>
-                <p>Email: traveltripper@.com</p>
+                <p>Email: tripadvisor@gmail.com</p>
                 <p>Phone: +94 1456790</p>
 
                 <h2>Privacy Information</h2>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Commodi, iste ab! Consectetur fugit possimus, dolorem facere
-                  et laboriosam molestiae ut aliquam corporis animi quasi
-                  asperiores architecto doloremque ipsa, consequatur quas.
+                At TrpAdvisor, we prioritize your privacy. We protect your personal information and ensure a secure browsing experience. Learn more about our data practices in our privacy policy.
                 </p>
               </div>
             </Col>

@@ -4,15 +4,16 @@
     padding-bottom: 30px;
 }
 
-.footer .logo img {
-    width: 50%;
+.footer .logo  {
+ 
     margin-bottom: 1rem;
+    color: var(--secondary-color);
     
 }
 
 .footer .logo p{
-    color: var(--text-color);
-
+    color: rgb(76, 70, 70);
+    margin-top: 2rem;
       
    
 }
@@ -28,7 +29,7 @@
 }
 .footer__quick-links li a{
     text-decoration: none;
-    color: var(--text-color);
+    color: rgb(76, 70, 70);
     font-size: 1.1rem;
 }
 
@@ -36,6 +37,6 @@
     color: var(--primary-color);
 }
 .copyright{
-    color: var(--text-color);
+    color:rgb(76, 70, 70);
     font-size: 1rem;
 }
