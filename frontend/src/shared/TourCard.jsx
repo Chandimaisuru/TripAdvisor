@@ -1,4 +1,5 @@
-import React from 'react'
+/* eslint-disable react/prop-types */
+
 import './tour-card.css'
 import { Card,CardBody } from 'reactstrap';
 import {Link} from 'react-router-dom';
@@ -6,7 +7,8 @@ import calculateAvgRating from "../utils/avgRating";
 
 function TourCard({tour}) {
 
-const {_id,title, photo, price, featured, reviews, city  } = tour;
+// eslint-disable-next-line react/prop-types
+const {_id,title, photo, price, reviews, city  } = tour;
 
 const {totalRating, avgRating} = calculateAvgRating(reviews);
 

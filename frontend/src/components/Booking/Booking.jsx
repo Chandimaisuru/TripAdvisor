@@ -1,4 +1,5 @@
-import React,{useState,useContext} from 'react'
+/* eslint-disable react/prop-types */
+import {useState,useContext} from 'react'
 import './booking.css'
 import { Form, FormGroup, ListGroup, ListGroupItem, Button } from 'reactstrap'
 import { useNavigate } from 'react-router-dom';
@@ -7,6 +8,7 @@ import { AuthContext } from '../../context/AuthContext';
 
 function Booking({ tour, avgRating}) {
 
+    // eslint-disable-next-line react/prop-types
     const { price, reviews,title  } = tour;
     const navigate = useNavigate();
 
